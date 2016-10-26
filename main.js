@@ -57177,9 +57177,118 @@ module.exports = warning;
 },{"_process":395}],770:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.default = App;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = require('react-router');
+
 var _reactBootstrap = require('react-bootstrap');
 
 var _reactRouterBootstrap = require('react-router-bootstrap');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function NavBar(props) {
+	return _react2.default.createElement(
+		_reactBootstrap.Navbar,
+		null,
+		_react2.default.createElement(
+			_reactBootstrap.Navbar.Header,
+			null,
+			_react2.default.createElement(
+				_reactBootstrap.Navbar.Brand,
+				null,
+				_react2.default.createElement(
+					_reactRouter.Link,
+					{ to: '/' },
+					'ChibiCon'
+				)
+			),
+			_react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
+		),
+		_react2.default.createElement(
+			_reactBootstrap.Navbar.Collapse,
+			null,
+			_react2.default.createElement(
+				_reactBootstrap.Nav,
+				null,
+				_react2.default.createElement(
+					_reactRouterBootstrap.IndexLinkContainer,
+					null,
+					_react2.default.createElement(
+						_reactBootstrap.NavItem,
+						{ eventKey: 1 },
+						'Home'
+					)
+				),
+				_react2.default.createElement(
+					_reactRouterBootstrap.LinkContainer,
+					{ to: '/travel' },
+					_react2.default.createElement(
+						_reactBootstrap.NavItem,
+						{ eventKey: 2 },
+						'Travel'
+					)
+				),
+				_react2.default.createElement(
+					_reactRouterBootstrap.LinkContainer,
+					{ to: '/activities' },
+					_react2.default.createElement(
+						_reactBootstrap.NavItem,
+						{ eventKey: 3 },
+						'Activities'
+					)
+				),
+				_react2.default.createElement(
+					_reactRouterBootstrap.LinkContainer,
+					{ to: '/contact' },
+					_react2.default.createElement(
+						_reactBootstrap.NavItem,
+						{ eventKey: 4 },
+						'Contact'
+					)
+				),
+				_react2.default.createElement(
+					_reactRouterBootstrap.LinkContainer,
+					{ to: '/tickets' },
+					_react2.default.createElement(
+						_reactBootstrap.NavItem,
+						{ eventKey: 5 },
+						'Tickets'
+					)
+				)
+			)
+		)
+	);
+}
+
+function App(_ref) {
+	var children = _ref.children;
+
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			'header',
+			null,
+			_react2.default.createElement(NavBar, null)
+		),
+		_react2.default.createElement(
+			'div',
+			{ style: { marginTop: '1.5em' } },
+			children
+		)
+	);
+}
+
+},{"react":731,"react-bootstrap":492,"react-router":582,"react-router-bootstrap":550}],771:[function(require,module,exports){
+'use strict';
 
 var _reduxDevtools = require('redux-devtools');
 
@@ -57207,174 +57316,83 @@ var _reactRouter = require('react-router');
 
 var _reactRouterRedux = require('react-router-redux');
 
+var _app = require('./app');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var reducer = (0, _redux.combineReducers)({
-				routing: _reactRouterRedux.routerReducer
+    routing: _reactRouterRedux.routerReducer
 });
 
 var DevTools = (0, _reduxDevtools.createDevTools)(_react2.default.createElement(
-				_reduxDevtoolsDockMonitor2.default,
-				{ toggleVisibilityKey: 'ctrl-h', changePositionKey: 'ctrl-q' },
-				_react2.default.createElement(_reduxDevtoolsLogMonitor2.default, { theme: 'tomorrow', preserveScrollTop: false })
+    _reduxDevtoolsDockMonitor2.default,
+    { toggleVisibilityKey: 'ctrl-h', changePositionKey: 'ctrl-q' },
+    _react2.default.createElement(_reduxDevtoolsLogMonitor2.default, { theme: 'tomorrow', preserveScrollTop: false })
 ));
 
 var store = (0, _redux.createStore)(reducer, DevTools.instrument());
 var history = (0, _reactRouterRedux.syncHistoryWithStore)(_reactRouter.browserHistory, store);
 
-function NavBar(props) {
-				return _react2.default.createElement(
-								_reactBootstrap.Navbar,
-								null,
-								_react2.default.createElement(
-												_reactBootstrap.Navbar.Header,
-												null,
-												_react2.default.createElement(
-																_reactBootstrap.Navbar.Brand,
-																null,
-																_react2.default.createElement(
-																				_reactRouter.Link,
-																				{ to: '/' },
-																				'ChibiCon'
-																)
-												),
-												_react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
-								),
-								_react2.default.createElement(
-												_reactBootstrap.Navbar.Collapse,
-												null,
-												_react2.default.createElement(
-																_reactBootstrap.Nav,
-																null,
-																_react2.default.createElement(
-																				_reactRouterBootstrap.LinkContainer,
-																				{ to: '/' },
-																				_react2.default.createElement(
-																								_reactBootstrap.NavItem,
-																								{ eventKey: 1 },
-																								'Home'
-																				)
-																),
-																_react2.default.createElement(
-																				_reactRouterBootstrap.LinkContainer,
-																				{ to: '/travel' },
-																				_react2.default.createElement(
-																								_reactBootstrap.NavItem,
-																								{ eventKey: 2 },
-																								'Travel'
-																				)
-																),
-																_react2.default.createElement(
-																				_reactRouterBootstrap.LinkContainer,
-																				{ to: '/activities' },
-																				_react2.default.createElement(
-																								_reactBootstrap.NavItem,
-																								{ eventKey: 3 },
-																								'Activities'
-																				)
-																),
-																_react2.default.createElement(
-																				_reactRouterBootstrap.LinkContainer,
-																				{ to: '/contact' },
-																				_react2.default.createElement(
-																								_reactBootstrap.NavItem,
-																								{ eventKey: 4 },
-																								'Contact'
-																				)
-																),
-																_react2.default.createElement(
-																				_reactRouterBootstrap.LinkContainer,
-																				{ to: '/tickets' },
-																				_react2.default.createElement(
-																								_reactBootstrap.NavItem,
-																								{ eventKey: 5, href: '#' },
-																								'Tickets'
-																				)
-																)
-												)
-								)
-				);
-}
-
-function App(_ref) {
-				var children = _ref.children;
-
-				return _react2.default.createElement(
-								'div',
-								null,
-								_react2.default.createElement(
-												'header',
-												null,
-												_react2.default.createElement(NavBar, null)
-								),
-								_react2.default.createElement(
-												'div',
-												{ style: { marginTop: '1.5em' } },
-												children
-								)
-				);
-}
-
 function Home() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Home'
-				);
+    return _react2.default.createElement(
+        'p',
+        null,
+        'Home'
+    );
 }
 
 function Travel() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Travel'
-				);
+    return _react2.default.createElement(
+        'p',
+        null,
+        'Travel'
+    );
 }
 
 function Activities() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Activities'
-				);
+    return _react2.default.createElement(
+        'p',
+        null,
+        'Activities'
+    );
 }
 
 function Contact() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Contact'
-				);
+    return _react2.default.createElement(
+        'p',
+        null,
+        'Contact'
+    );
 }
 
 function Tickets() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Tickets'
-				);
+    return _react2.default.createElement(
+        'p',
+        null,
+        'Tickets'
+    );
 }
 
 _reactDom2.default.render(_react2.default.createElement(
-				_reactRedux.Provider,
-				{ store: store },
-				_react2.default.createElement(
-								'div',
-								null,
-								_react2.default.createElement(
-												_reactRouter.Router,
-												{ history: history },
-												_react2.default.createElement(
-																_reactRouter.Route,
-																{ path: '/', component: App },
-																_react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'tickets', component: Tickets })
-												)
-								)
-				)
+    _reactRedux.Provider,
+    { store: store },
+    _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            _reactRouter.Router,
+            { history: history },
+            _react2.default.createElement(
+                _reactRouter.Route,
+                { path: '/', component: _app.App },
+                _react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
+                _react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
+                _react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
+                _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact }),
+                _react2.default.createElement(_reactRouter.Route, { path: 'tickets', component: Tickets })
+            )
+        )
+    )
 ), document.getElementById('root'));
 
-},{"react":731,"react-bootstrap":492,"react-dom":506,"react-redux":543,"react-router":582,"react-router-bootstrap":550,"react-router-redux":552,"redux":760,"redux-devtools":753,"redux-devtools-dock-monitor":735,"redux-devtools-log-monitor":747}]},{},[770]);
+},{"./app":770,"react":731,"react-dom":506,"react-redux":543,"react-router":582,"react-router-redux":552,"redux":760,"redux-devtools":753,"redux-devtools-dock-monitor":735,"redux-devtools-log-monitor":747}]},{},[771]);
