@@ -57318,6 +57318,8 @@ var _reactRouterRedux = require('react-router-redux');
 
 var _app = require('./app');
 
+var _app2 = _interopRequireDefault(_app);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var reducer = (0, _redux.combineReducers)({
@@ -57384,7 +57386,7 @@ _reactDom2.default.render(_react2.default.createElement(
             { history: history },
             _react2.default.createElement(
                 _reactRouter.Route,
-                { path: '/', component: _app.App },
+                { path: '/', component: _app2.default },
                 _react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
                 _react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
                 _react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
