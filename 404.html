@@ -4,9 +4,13 @@
 	 sessionStorage.set('redirect', location.pathname);
 	 location.pathname = '/';
 	</script>
-	<meta http-equiv="refresh" content="0;URL='/'"></meta>
+	<noscript>
+	    <meta http-equiv="refresh" content="0;URL='/'"></meta>
+	</noscript>
     </head>
     <!--
+	 IE needs 512 bytes on the page for some reason, so here's Hermes singing about his job:
+	 
     Hermes: When I was four there was a hurricane in Kingston Town
     with a foot and a half of water
     Everyone was alright, but I cried all night
