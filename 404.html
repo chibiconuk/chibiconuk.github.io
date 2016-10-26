@@ -1,9 +1,10 @@
 <html>
     <head>
 	<script>
-	 sessionStorage.set('redirect', location.href);
+	 sessionStorage.set('redirect', location.pathname);
+	 location.pathname = '/';
 	</script>
-	<meta http-equiv="refresh" content="0;URL='/chibiconuk'"></meta>
+	<meta http-equiv="refresh" content="0;URL='/'"></meta>
     </head>
     <!--
     Hermes: When I was four there was a hurricane in Kingston Town
