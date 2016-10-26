@@ -57337,7 +57337,7 @@ var DevTools = (0, _reduxDevtools.createDevTools)(_react2.default.createElement(
 var store = (0, _redux.createStore)(reducer, DevTools.instrument());
 
 (function () {
-				var redirect = sessionStorage.redirect;
+				var redirect = sessionStorage.getItem('redirect');
 				delete sessionStorage.redirect;
 
 				if (redirect && redirect != location.href) {
