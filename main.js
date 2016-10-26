@@ -57220,7 +57220,7 @@ function NavBar(props) {
 				null,
 				_react2.default.createElement(
 					_reactRouterBootstrap.IndexLinkContainer,
-					null,
+					{ to: '/' },
 					_react2.default.createElement(
 						_reactBootstrap.NavItem,
 						{ eventKey: 1 },
