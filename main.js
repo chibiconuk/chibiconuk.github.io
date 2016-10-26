@@ -57336,14 +57336,13 @@ var DevTools = (0, _reduxDevtools.createDevTools)(_react2.default.createElement(
 
 var store = (0, _redux.createStore)(reducer, DevTools.instrument());
 
-(function () {
-				var redirect = sessionStorage.getItem('redirect');
-				delete sessionStorage.redirect;
+var redirect = sessionStorage.getItem('redirect');
 
-				if (redirect && redirect != location.href) {
-								history.replaceState(null, null, redirect);
-				}
-})();
+if (redirect && redirect != location.href) {
+				history.replaceState(null, null, redirect);
+}
+
+sessionStorage.removeItem('redirect');
 
 var history = (0, _reactRouterRedux.syncHistoryWithStore)(_reactRouter.browserHistory, store);
 
