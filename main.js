@@ -57347,7 +57347,11 @@ function Home() {
 												_react2.default.createElement(
 																_reactBootstrap.Col,
 																{ xs: 12, sm: 6, md: 8 },
-																_react2.default.createElement('img', { src: '/logo.png' })
+																_react2.default.createElement(
+																				_reactBootstrap.Jumbotron,
+																				null,
+																				_react2.default.createElement('img', { src: '/logo.png' })
+																)
 												)
 								)
 				);
