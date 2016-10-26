@@ -57251,7 +57251,7 @@ function NavBar(props) {
 																				{ to: '/' },
 																				_react2.default.createElement(
 																								_reactBootstrap.NavItem,
-																								{ active: true, eventKey: 1 },
+																								{ eventKey: 1 },
 																								'Home'
 																				)
 																),
@@ -57265,19 +57265,31 @@ function NavBar(props) {
 																				)
 																),
 																_react2.default.createElement(
-																				_reactBootstrap.NavItem,
-																				{ eventKey: 3, href: '#' },
-																				'Activities'
+																				_reactRouterBootstrap.LinkContainer,
+																				{ to: '/activities' },
+																				_react2.default.createElement(
+																								_reactBootstrap.NavItem,
+																								{ eventKey: 3 },
+																								'Activities'
+																				)
 																),
 																_react2.default.createElement(
-																				_reactBootstrap.NavItem,
-																				{ eventKey: 4, href: '#' },
-																				'Contact'
+																				_reactRouterBootstrap.LinkContainer,
+																				{ to: '/contact' },
+																				_react2.default.createElement(
+																								_reactBootstrap.NavItem,
+																								{ eventKey: 4 },
+																								'Contact'
+																				)
 																),
 																_react2.default.createElement(
-																				_reactBootstrap.NavItem,
-																				{ eventKey: 5, href: '#' },
-																				'Tickets'
+																				_reactRouterBootstrap.LinkContainer,
+																				{ to: '/tickets' },
+																				_react2.default.createElement(
+																								_reactBootstrap.NavItem,
+																								{ eventKey: 5, href: '#' },
+																								'Tickets'
+																				)
 																)
 												)
 								)
@@ -57319,6 +57331,30 @@ function Travel() {
 				);
 }
 
+function Activities() {
+				return _react2.default.createElement(
+								'p',
+								null,
+								'Activities'
+				);
+}
+
+function Contact() {
+				return _react2.default.createElement(
+								'p',
+								null,
+								'Contact'
+				);
+}
+
+function Tickets() {
+				return _react2.default.createElement(
+								'p',
+								null,
+								'Tickets'
+				);
+}
+
 _reactDom2.default.render(_react2.default.createElement(
 				_reactRedux.Provider,
 				{ store: store },
@@ -57332,7 +57368,10 @@ _reactDom2.default.render(_react2.default.createElement(
 																_reactRouter.Route,
 																{ path: '/', component: App },
 																_react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel })
+																_react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
+																_react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
+																_react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact }),
+																_react2.default.createElement(_reactRouter.Route, { path: 'tickets', component: Tickets })
 												)
 								)
 				)
