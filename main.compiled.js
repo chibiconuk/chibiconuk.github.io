@@ -57233,7 +57233,7 @@ function NavBar(props) {
 																_reactBootstrap.Navbar.Brand,
 																null,
 																_react2.default.createElement(
-																				_reactRouterBootstrap.LinkContainer,
+																				_reactRouter.Link,
 																				{ to: '/' },
 																				'ChibiCon'
 																)
