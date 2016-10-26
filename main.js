@@ -57339,7 +57339,7 @@ var store = (0, _redux.createStore)(reducer, DevTools.instrument());
 var redirect = sessionStorage.getItem('redirect');
 
 if (redirect && redirect != location.href) {
-				_reactRouter.browserHistory.push('/' + redirect);
+				_reactRouter.browserHistory.push(redirect);
 }
 
 sessionStorage.removeItem('redirect');
