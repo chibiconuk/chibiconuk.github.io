@@ -57335,6 +57335,16 @@ var DevTools = (0, _reduxDevtools.createDevTools)(_react2.default.createElement(
 ));
 
 var store = (0, _redux.createStore)(reducer, DevTools.instrument());
+
+(function () {
+				var redirect = sessionStorage.redirect;
+				delete sessionStorage.redirect;
+
+				if (redirect && redirect != location.href) {
+								history.replaceState(null, null, redirect);
+				}
+})();
+
 var history = (0, _reactRouterRedux.syncHistoryWithStore)(_reactRouter.browserHistory, store);
 
 function Home() {
@@ -57359,7 +57369,7 @@ function Home() {
 												null,
 												_react2.default.createElement(
 																_reactBootstrap.Col,
-																{ xs: 6, md: 4 },
+																{ xs: 12, md: 4 },
 																_react2.default.createElement(
 																				_reactBootstrap.Panel,
 																				null,
@@ -57368,7 +57378,7 @@ function Home() {
 												),
 												_react2.default.createElement(
 																_reactBootstrap.Col,
-																{ xs: 6, md: 4 },
+																{ xs: 12, md: 4 },
 																_react2.default.createElement(
 																				_reactBootstrap.Panel,
 																				null,
@@ -57377,7 +57387,7 @@ function Home() {
 												),
 												_react2.default.createElement(
 																_reactBootstrap.Col,
-																{ xs: 6, md: 4 },
+																{ xs: 12, md: 4 },
 																_react2.default.createElement(
 																				_reactBootstrap.Panel,
 																				null,
