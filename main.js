@@ -57361,7 +57361,7 @@ function Home() {
 																_reactBootstrap.Col,
 																{ xs: 6, md: 4 },
 																_react2.default.createElement(
-																				'p',
+																				_reactBootstrap.Panel,
 																				null,
 																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque enim vel dapibus fermentum. Ut tempus ac lectus pretium blandit. Etiam velit diam, lobortis ut congue vel, semper eget lectus. Fusce sed ex eros. Donec luctus urna ut diam aliquet, eget pellentesque nisi tempor. Suspendisse ac leo dui. Praesent non urna nec diam commodo fringilla id sit amet justo.'
 																)
@@ -57370,7 +57370,7 @@ function Home() {
 																_reactBootstrap.Col,
 																{ xs: 6, md: 4 },
 																_react2.default.createElement(
-																				'p',
+																				_reactBootstrap.Panel,
 																				null,
 																				' Aliquam tincidunt neque risus, a lacinia mauris porttitor sed. Praesent pulvinar, est at aliquam ullamcorper, metus purus auctor dolor, vitae pulvinar ligula arcu feugiat risus. Quisque vel quam venenatis, dapibus enim at, egestas felis. Etiam quis facilisis libero. Vestibulum vel luctus nibh. Fusce laoreet pulvinar viverra. Praesent iaculis nisl quis scelerisque euismod. Fusce sed rutrum enim. Phasellus vitae nisi diam. Proin sagittis maximus tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sollicitudin nulla. Etiam ullamcorper, dolor sed aliquam aliquam, diam purus molestie enim, a pellentesque risus sem ut neque. Sed vel odio ut nibh accumsan eleifend. Curabitur convallis est at ligula aliquam porta.'
 																)
@@ -57379,7 +57379,7 @@ function Home() {
 																_reactBootstrap.Col,
 																{ xs: 6, md: 4 },
 																_react2.default.createElement(
-																				'p',
+																				_reactBootstrap.Panel,
 																				null,
 																				' Curabitur a diam orci. In hac habitasse platea dictumst. Donec pretium vitae velit non consectetur. Proin sodales pulvinar enim, eget faucibus nisi. Sed erat dui, aliquam a libero eu, sodales malesuada tortor. Fusce sit amet varius lacus, eu aliquam purus. Suspendisse euismod pellentesque urna vitae hendrerit. Nulla quis mi fringilla, sodales enim in, viverra urna. Sed bibendum ante sit amet dolor consectetur, id faucibus sem volutpat. Morbi rhoncus interdum odio quis tristique.'
 																)
