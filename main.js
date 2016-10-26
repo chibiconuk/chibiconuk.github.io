@@ -57316,6 +57316,8 @@ var _reactRouter = require('react-router');
 
 var _reactRouterRedux = require('react-router-redux');
 
+var _reactBootstrap = require('react-bootstrap');
+
 var _app = require('./app');
 
 var _app2 = _interopRequireDefault(_app);
@@ -57323,78 +57325,86 @@ var _app2 = _interopRequireDefault(_app);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var reducer = (0, _redux.combineReducers)({
-    routing: _reactRouterRedux.routerReducer
+				routing: _reactRouterRedux.routerReducer
 });
 
 var DevTools = (0, _reduxDevtools.createDevTools)(_react2.default.createElement(
-    _reduxDevtoolsDockMonitor2.default,
-    { toggleVisibilityKey: 'ctrl-h', changePositionKey: 'ctrl-q' },
-    _react2.default.createElement(_reduxDevtoolsLogMonitor2.default, { theme: 'tomorrow', preserveScrollTop: false })
+				_reduxDevtoolsDockMonitor2.default,
+				{ toggleVisibilityKey: 'ctrl-h', changePositionKey: 'ctrl-q' },
+				_react2.default.createElement(_reduxDevtoolsLogMonitor2.default, { theme: 'tomorrow', preserveScrollTop: false })
 ));
 
 var store = (0, _redux.createStore)(reducer, DevTools.instrument());
 var history = (0, _reactRouterRedux.syncHistoryWithStore)(_reactRouter.browserHistory, store);
 
 function Home() {
-    return _react2.default.createElement(
-        'p',
-        null,
-        'Home'
-    );
+				return _react2.default.createElement(
+								_reactBootstrap.Grid,
+								null,
+								_react2.default.createElement(
+												_reactBootstrap.Row,
+												null,
+												_react2.default.createElement(
+																_reactBootstrap.Col,
+																{ xs: 12, sm: 6, md: 8 },
+																_react2.default.createElement('img', { src: '/logo.png' })
+												)
+								)
+				);
 }
 
 function Travel() {
-    return _react2.default.createElement(
-        'p',
-        null,
-        'Travel'
-    );
+				return _react2.default.createElement(
+								'p',
+								null,
+								'Travel'
+				);
 }
 
 function Activities() {
-    return _react2.default.createElement(
-        'p',
-        null,
-        'Activities'
-    );
+				return _react2.default.createElement(
+								'p',
+								null,
+								'Activities'
+				);
 }
 
 function Contact() {
-    return _react2.default.createElement(
-        'p',
-        null,
-        'Contact'
-    );
+				return _react2.default.createElement(
+								'p',
+								null,
+								'Contact'
+				);
 }
 
 function Tickets() {
-    return _react2.default.createElement(
-        'p',
-        null,
-        'Tickets'
-    );
+				return _react2.default.createElement(
+								'p',
+								null,
+								'Tickets'
+				);
 }
 
 _reactDom2.default.render(_react2.default.createElement(
-    _reactRedux.Provider,
-    { store: store },
-    _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            _reactRouter.Router,
-            { history: history },
-            _react2.default.createElement(
-                _reactRouter.Route,
-                { path: '/', component: _app2.default },
-                _react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
-                _react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
-                _react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
-                _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact }),
-                _react2.default.createElement(_reactRouter.Route, { path: 'tickets', component: Tickets })
-            )
-        )
-    )
+				_reactRedux.Provider,
+				{ store: store },
+				_react2.default.createElement(
+								'div',
+								null,
+								_react2.default.createElement(
+												_reactRouter.Router,
+												{ history: history },
+												_react2.default.createElement(
+																_reactRouter.Route,
+																{ path: '/', component: _app2.default },
+																_react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
+																_react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
+																_react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
+																_react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact }),
+																_react2.default.createElement(_reactRouter.Route, { path: 'tickets', component: Tickets })
+												)
+								)
+				)
 ), document.getElementById('root'));
 
-},{"./app":770,"react":731,"react-dom":506,"react-redux":543,"react-router":582,"react-router-redux":552,"redux":760,"redux-devtools":753,"redux-devtools-dock-monitor":735,"redux-devtools-log-monitor":747}]},{},[771]);
+},{"./app":770,"react":731,"react-bootstrap":492,"react-dom":506,"react-redux":543,"react-router":582,"react-router-redux":552,"redux":760,"redux-devtools":753,"redux-devtools-dock-monitor":735,"redux-devtools-log-monitor":747}]},{},[771]);
