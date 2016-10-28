@@ -57247,15 +57247,6 @@ function NavBar(props) {
 				),
 				_react2.default.createElement(
 					_reactRouterBootstrap.LinkContainer,
-					{ to: '/contact' },
-					_react2.default.createElement(
-						_reactBootstrap.NavItem,
-						{ eventKey: 4 },
-						'Contact'
-					)
-				),
-				_react2.default.createElement(
-					_reactRouterBootstrap.LinkContainer,
 					{ to: '/tickets' },
 					_react2.default.createElement(
 						_reactBootstrap.NavItem,
@@ -57536,55 +57527,6 @@ function Activities() {
 	);
 }
 
-function Contact() {
-	return _react2.default.createElement(
-		_reactBootstrap.Grid,
-		null,
-		_react2.default.createElement(
-			_reactBootstrap.Row,
-			null,
-			_react2.default.createElement(
-				_reactBootstrap.Col,
-				{ xs: 12 },
-				_react2.default.createElement(
-					_reactBootstrap.Panel,
-					null,
-					_react2.default.createElement(
-						'p',
-						null,
-						'If you have any enquiries you can contact us via email at: ',
-						_react2.default.createElement(
-							'a',
-							{ href: 'mailto:chibiconuk@gmail.com' },
-							'chibiconuk@gmail.com'
-						)
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						'We also have a twitter: ',
-						_react2.default.createElement(
-							'a',
-							{ href: 'https://twitter.com/UoEAnimeManga' },
-							'@UoEAnimeManga'
-						)
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						'As well as our Facebook Page: ',
-						_react2.default.createElement(
-							'a',
-							{ href: 'https://facebook.com/chibiconuk' },
-							'chibiconuk'
-						)
-					)
-				)
-			)
-		)
-	);
-}
-
 function Tickets() {
 	return _react2.default.createElement(
 		_reactBootstrap.Grid,
@@ -57634,7 +57576,6 @@ _reactDom2.default.render(_react2.default.createElement(
 				_react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
-				_react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'tickets', component: Tickets })
 			)
 		)
