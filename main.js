@@ -57283,6 +57283,29 @@ function App(_ref) {
 			'div',
 			{ style: { marginTop: '1.5em' } },
 			children
+		),
+		_react2.default.createElement(
+			'footer',
+			{ className: 'footer' },
+			_react2.default.createElement(
+				'div',
+				{ className: 'container' },
+				_react2.default.createElement(
+					'a',
+					{ href: 'https://www.facebook.com/chibiconuk' },
+					_react2.default.createElement('i', { id: 'social-fb', 'class': 'fa fa-facebook-square fa-3x social' })
+				),
+				_react2.default.createElement(
+					'a',
+					{ href: 'https://twitter.com/UoEAnimeManga' },
+					_react2.default.createElement('i', { id: 'social-tw', 'class': 'fa fa-twitter-square fa-3x social' })
+				),
+				_react2.default.createElement(
+					'a',
+					{ href: 'mailto:chibiconuk@gmail.com' },
+					_react2.default.createElement('i', { id: 'social-em', 'class': 'fa fa-envelope-square fa-3x social' })
+				)
+			)
 		)
 	);
 }
