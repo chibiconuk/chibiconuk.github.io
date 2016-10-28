@@ -57203,7 +57203,13 @@ function Home() {
 					_react2.default.createElement(
 						'p',
 						null,
-						'Chibi-Con will be held on Saturday 28th January 2017. Opening times are 10am \u2013 6pm. Last entry 5:30pm.'
+						'Chibi-Con will be held on ',
+						_react2.default.createElement(
+							'b',
+							null,
+							'Saturday 28th January 2017'
+						),
+						'. Opening times are 10am \u2013 6pm. Last entry 5:30pm.'
 					)
 				)
 			)
