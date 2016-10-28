@@ -57372,7 +57372,21 @@ function Home() {
 				_react2.default.createElement(
 					_reactBootstrap.Panel,
 					null,
-					'Chibi-Con is the first anime convention held at the University of Essex. It is hosted by the Anime and Manga Society. We have been to many conventions across the country and we enjoyed them so much we wanted to have a go at making our own. We want to include as many societies at our university as possible as well as local businesses. We will also be inviting performers to come and join us. There will be a variety of events and stalls throughout the day to keep you busy. We hope you will join us for what we hope to be the start of a new chapter here at the University of Essex. Chibi-Con will be held on Saturday 28th January 2017. Opening times are 10am \u2013 6pm. Last entry 5:30pm.'
+					_react2.default.createElement(
+						'p',
+						null,
+						'Chibi-Con is the first anime convention held at the University of Essex. It is hosted by the Anime and Manga Society. We have been to many conventions across the country and we enjoyed them so much we wanted to have a go at making our own. We want to include as many societies at our university as possible as well as local businesses. We will also be inviting performers to come and join us. There will be a variety of events and stalls throughout the day to keep you busy.'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'We hope you will join us for what we hope to be the start of a new chapter here at the University of Essex.'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Chibi-Con will be held on Saturday 28th January 2017. Opening times are 10am \u2013 6pm. Last entry 5:30pm.'
+					)
 				)
 			)
 		)
@@ -57392,7 +57406,36 @@ function Travel() {
 				_react2.default.createElement(
 					_reactBootstrap.Panel,
 					null,
-					'The address for the University of Essex is: University of Essex Wivenhoe Park Colchester Essex CO4 3SQ By Train The best way to get to the University of Essex Colchester Campus would be to get to Colchester station (Not Colchester Town). From there you will have access to buses that can take you to the university. The 61 and 62 bus will take you to campus. When you arrive on campus there will be signs and staff to help guide you to Base and the Lecture Theatre Building (LTB) where the event will be taking place.'
+					_react2.default.createElement(
+						'p',
+						null,
+						'The address for the University of Essex is:',
+						_react2.default.createElement('br', null),
+						'University of Essex',
+						_react2.default.createElement('br', null),
+						'Wivenhoe Park',
+						_react2.default.createElement('br', null),
+						'Colchester',
+						_react2.default.createElement('br', null),
+						'Essex',
+						_react2.default.createElement('br', null),
+						'CO4 3SQ'
+					),
+					_react2.default.createElement(
+						'h3',
+						null,
+						'By Train'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'The best way to get to the University of Essex Colchester Campus would be to get to Colchester station (Not Colchester Town). From there you will have access to buses that can take you to the university. The 61 and 62 bus will take you to campus.'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'When you arrive on campus there will be signs and staff to help guide you to Base and the Lecture Theatre Building (LTB) where the event will be taking place.'
+					)
 				)
 			)
 		)
@@ -57412,7 +57455,58 @@ function Activities() {
 				_react2.default.createElement(
 					_reactBootstrap.Panel,
 					null,
-					'We are planning on having a Cosparade where you can show off your skills.  If you would like to take part tell us your name and character you plan on cosplaying at: chibiconuk@gmail.com There will also be a J-fashion show so if you like to wear lolita, visual kei, fairy kei or any other fashions and would like to take part email us at: chibiconuk@gmail.com For Exhibitors If you would like to sell your wares at our convention contact us either by our Facebook page or by email at chibiconuk@gmail.com (Exhibitors will get free entry) For Performers If you would like to perform at Chibi Con contact us either by our Facebook page or by email at chibiconuk@gmail.com . In the message let us know what you will be doing and let us know about any equipment requirements you may have. (Performers will get free entry)'
+					_react2.default.createElement(
+						'p',
+						null,
+						'We are planning on having a Cosparade where you can show off your skills.  If you would like to take part tell us your name and character you plan on cosplaying at: ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'mailto:chibiconuk@gmail.com' },
+							'chibiconuk@gmail.com'
+						)
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'There will also be a J-fashion show so if you like to wear lolita, visual kei, fairy kei or any other fashions and would like to take part email us at: ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'mailto:chibiconuk@gmail.com' },
+							'chibiconuk@gmail.com'
+						)
+					),
+					_react2.default.createElement(
+						'h3',
+						null,
+						'For Exhibitors'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'If you would like to sell your wares at our convention contact us either by our Facebook page or by email at ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'mailto:chibiconuk@gmail.com' },
+							'chibiconuk@gmail.com'
+						),
+						' (Exhibitors will get free entry)'
+					),
+					_react2.default.createElement(
+						'h3',
+						null,
+						'For Performers'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'If you would like to perform at Chibi Con contact us either by our Facebook page or by email at ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'mailto:chibiconuk@gmail.com' },
+							'chibiconuk@gmail.com'
+						),
+						'. In the message let us know what you will be doing and let us know about any equipment requirements you may have. (Performers will get free entry)'
+					)
 				)
 			)
 		)
@@ -57432,7 +57526,36 @@ function Contact() {
 				_react2.default.createElement(
 					_reactBootstrap.Panel,
 					null,
-					'If you have any enquiries you can contact us via email at: chibicon@gmail.com We also have a twitter: @UoEAnimeManga As well as our Facebook Page: facebook.com/chibiconuk'
+					_react2.default.createElement(
+						'p',
+						null,
+						'If you have any enquiries you can contact us via email at: ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'mailto:chibiconuk@gmail.com' },
+							'chibiconuk@gmail.com'
+						)
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'We also have a twitter: ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'https://twitter.com/UoEAnimeManga' },
+							'@UoEAnimeManga'
+						)
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'As well as our Facebook Page: ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'https://facebook.com/chibiconuk' },
+							'chibiconuk'
+						)
+					)
 				)
 			)
 		)
@@ -57452,7 +57575,21 @@ function Tickets() {
 				_react2.default.createElement(
 					_reactBootstrap.Panel,
 					null,
-					'Tickets will be on sale soon (Exhibitors and Performers do not need to buy tickets) Bring ID with you when you collect your tickets as under 18s will require a separate wristband. Chibi-Con will be held on Saturday 28th January 2017. Opening times are 10am \u2013 6pm. Last entry 5:30pm.'
+					_react2.default.createElement(
+						'p',
+						null,
+						'Tickets will be on sale soon (Exhibitors and Performers do not need to buy tickets)'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Bring ID with you when you collect your tickets as under 18s will require a separate wristband.'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Chibi-Con will be held on Saturday 28th January 2017. Opening times are 10am \u2013 6pm. Last entry 5:30pm.'
+					)
 				)
 			)
 		)
