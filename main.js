@@ -57325,13 +57325,13 @@ var _app2 = _interopRequireDefault(_app);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var reducer = (0, _redux.combineReducers)({
-				routing: _reactRouterRedux.routerReducer
+	routing: _reactRouterRedux.routerReducer
 });
 
 var DevTools = (0, _reduxDevtools.createDevTools)(_react2.default.createElement(
-				_reduxDevtoolsDockMonitor2.default,
-				{ toggleVisibilityKey: 'ctrl-h', changePositionKey: 'ctrl-q' },
-				_react2.default.createElement(_reduxDevtoolsLogMonitor2.default, { theme: 'tomorrow', preserveScrollTop: false })
+	_reduxDevtoolsDockMonitor2.default,
+	{ toggleVisibilityKey: 'ctrl-h', changePositionKey: 'ctrl-q' },
+	_react2.default.createElement(_reduxDevtoolsLogMonitor2.default, { theme: 'tomorrow', preserveScrollTop: false })
 ));
 
 var store = (0, _redux.createStore)(reducer, DevTools.instrument());
@@ -57339,7 +57339,7 @@ var store = (0, _redux.createStore)(reducer, DevTools.instrument());
 var redirect = sessionStorage.getItem('redirect');
 
 if (redirect && redirect != location.href) {
-				_reactRouter.browserHistory.push(redirect);
+	_reactRouter.browserHistory.push(redirect);
 }
 
 sessionStorage.removeItem('redirect');
@@ -57347,108 +57347,138 @@ sessionStorage.removeItem('redirect');
 var history = (0, _reactRouterRedux.syncHistoryWithStore)(_reactRouter.browserHistory, store);
 
 function Home() {
-				return _react2.default.createElement(
-								_reactBootstrap.Grid,
-								null,
-								_react2.default.createElement(
-												_reactBootstrap.Row,
-												null,
-												_react2.default.createElement(
-																_reactBootstrap.Col,
-																{ xs: 12, sm: 12, md: 12 },
-																_react2.default.createElement(
-																				_reactBootstrap.Jumbotron,
-																				{ style: { textAlign: 'center' } },
-																				_react2.default.createElement('img', { src: '/logo.png', height: '250em' })
-																)
-												)
-								),
-								_react2.default.createElement(
-												_reactBootstrap.Row,
-												null,
-												_react2.default.createElement(
-																_reactBootstrap.Col,
-																{ xs: 12, md: 4 },
-																_react2.default.createElement(
-																				_reactBootstrap.Panel,
-																				null,
-																				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque enim vel dapibus fermentum. Ut tempus ac lectus pretium blandit. Etiam velit diam, lobortis ut congue vel, semper eget lectus. Fusce sed ex eros. Donec luctus urna ut diam aliquet, eget pellentesque nisi tempor. Suspendisse ac leo dui. Praesent non urna nec diam commodo fringilla id sit amet justo.'
-																)
-												),
-												_react2.default.createElement(
-																_reactBootstrap.Col,
-																{ xs: 12, md: 4 },
-																_react2.default.createElement(
-																				_reactBootstrap.Panel,
-																				null,
-																				' Aliquam tincidunt neque risus, a lacinia mauris porttitor sed. Praesent pulvinar, est at aliquam ullamcorper, metus purus auctor dolor, vitae pulvinar ligula arcu feugiat risus. Quisque vel quam venenatis, dapibus enim at, egestas felis. Etiam quis facilisis libero. Vestibulum vel luctus nibh. Fusce laoreet pulvinar viverra. Praesent iaculis nisl quis scelerisque euismod. Fusce sed rutrum enim. Phasellus vitae nisi diam. Proin sagittis maximus tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sollicitudin nulla. Etiam ullamcorper, dolor sed aliquam aliquam, diam purus molestie enim, a pellentesque risus sem ut neque. Sed vel odio ut nibh accumsan eleifend. Curabitur convallis est at ligula aliquam porta.'
-																)
-												),
-												_react2.default.createElement(
-																_reactBootstrap.Col,
-																{ xs: 12, md: 4 },
-																_react2.default.createElement(
-																				_reactBootstrap.Panel,
-																				null,
-																				' Curabitur a diam orci. In hac habitasse platea dictumst. Donec pretium vitae velit non consectetur. Proin sodales pulvinar enim, eget faucibus nisi. Sed erat dui, aliquam a libero eu, sodales malesuada tortor. Fusce sit amet varius lacus, eu aliquam purus. Suspendisse euismod pellentesque urna vitae hendrerit. Nulla quis mi fringilla, sodales enim in, viverra urna. Sed bibendum ante sit amet dolor consectetur, id faucibus sem volutpat. Morbi rhoncus interdum odio quis tristique.'
-																)
-												)
-								)
-				);
+	return _react2.default.createElement(
+		_reactBootstrap.Grid,
+		null,
+		_react2.default.createElement(
+			_reactBootstrap.Row,
+			null,
+			_react2.default.createElement(
+				_reactBootstrap.Col,
+				{ xs: 12 },
+				_react2.default.createElement(
+					_reactBootstrap.Jumbotron,
+					{ style: { textAlign: 'center' } },
+					_react2.default.createElement('img', { src: '/logo.png', height: '250em' })
+				)
+			)
+		),
+		_react2.default.createElement(
+			_reactBootstrap.Row,
+			null,
+			_react2.default.createElement(
+				_reactBootstrap.Col,
+				{ xs: 12 },
+				_react2.default.createElement(
+					_reactBootstrap.Panel,
+					null,
+					'Chibi-Con is the first anime convention held at the University of Essex. It is hosted by the Anime and Manga Society. We have been to many conventions across the country and we enjoyed them so much we wanted to have a go at making our own. We want to include as many societies at our university as possible as well as local businesses. We will also be inviting performers to come and join us. There will be a variety of events and stalls throughout the day to keep you busy. We hope you will join us for what we hope to be the start of a new chapter here at the University of Essex. Chibi-Con will be held on Saturday 28th January 2017. Opening times are 10am \u2013 6pm. Last entry 5:30pm.'
+				)
+			)
+		)
+	);
 }
 
 function Travel() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Travel'
-				);
+	return _react2.default.createElement(
+		_reactBootstrap.Grid,
+		null,
+		_react2.default.createElement(
+			_reactBootstrap.Row,
+			null,
+			_react2.default.createElement(
+				_reactBootstrap.Col,
+				{ xs: 12 },
+				_react2.default.createElement(
+					_reactBootstrap.Panel,
+					null,
+					'The address for the University of Essex is: University of Essex Wivenhoe Park Colchester Essex CO4 3SQ By Train The best way to get to the University of Essex Colchester Campus would be to get to Colchester station (Not Colchester Town). From there you will have access to buses that can take you to the university. The 61 and 62 bus will take you to campus. When you arrive on campus there will be signs and staff to help guide you to Base and the Lecture Theatre Building (LTB) where the event will be taking place.'
+				)
+			)
+		)
+	);
 }
 
 function Activities() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Activities'
-				);
+	return _react2.default.createElement(
+		_reactBootstrap.Grid,
+		null,
+		_react2.default.createElement(
+			_reactBootstrap.Row,
+			null,
+			_react2.default.createElement(
+				_reactBootstrap.Col,
+				{ xs: 12 },
+				_react2.default.createElement(
+					_reactBootstrap.Panel,
+					null,
+					'We are planning on having a Cosparade where you can show off your skills.  If you would like to take part tell us your name and character you plan on cosplaying at: chibiconuk@gmail.com There will also be a J-fashion show so if you like to wear lolita, visual kei, fairy kei or any other fashions and would like to take part email us at: chibiconuk@gmail.com For Exhibitors If you would like to sell your wares at our convention contact us either by our Facebook page or by email at chibiconuk@gmail.com (Exhibitors will get free entry) For Performers If you would like to perform at Chibi Con contact us either by our Facebook page or by email at chibiconuk@gmail.com . In the message let us know what you will be doing and let us know about any equipment requirements you may have. (Performers will get free entry)'
+				)
+			)
+		)
+	);
 }
 
 function Contact() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Contact'
-				);
+	return _react2.default.createElement(
+		_reactBootstrap.Grid,
+		null,
+		_react2.default.createElement(
+			_reactBootstrap.Row,
+			null,
+			_react2.default.createElement(
+				_reactBootstrap.Col,
+				{ xs: 12 },
+				_react2.default.createElement(
+					_reactBootstrap.Panel,
+					null,
+					'If you have any enquiries you can contact us via email at: chibicon@gmail.com We also have a twitter: @UoEAnimeManga As well as our Facebook Page: facebook.com/chibiconuk'
+				)
+			)
+		)
+	);
 }
 
 function Tickets() {
-				return _react2.default.createElement(
-								'p',
-								null,
-								'Tickets'
-				);
+	return _react2.default.createElement(
+		_reactBootstrap.Grid,
+		null,
+		_react2.default.createElement(
+			_reactBootstrap.Row,
+			null,
+			_react2.default.createElement(
+				_reactBootstrap.Col,
+				{ xs: 12 },
+				_react2.default.createElement(
+					_reactBootstrap.Panel,
+					null,
+					'Tickets will be on sale soon (Exhibitors and Performers do not need to buy tickets) Bring ID with you when you collect your tickets as under 18s will require a separate wristband. Chibi-Con will be held on Saturday 28th January 2017. Opening times are 10am \u2013 6pm. Last entry 5:30pm.'
+				)
+			)
+		)
+	);
 }
 
 _reactDom2.default.render(_react2.default.createElement(
-				_reactRedux.Provider,
-				{ store: store },
-				_react2.default.createElement(
-								'div',
-								null,
-								_react2.default.createElement(
-												_reactRouter.Router,
-												{ history: history },
-												_react2.default.createElement(
-																_reactRouter.Route,
-																{ path: '/', component: _app2.default },
-																_react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact }),
-																_react2.default.createElement(_reactRouter.Route, { path: 'tickets', component: Tickets })
-												)
-								)
-				)
+	_reactRedux.Provider,
+	{ store: store },
+	_react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			_reactRouter.Router,
+			{ history: history },
+			_react2.default.createElement(
+				_reactRouter.Route,
+				{ path: '/', component: _app2.default },
+				_react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'travel', component: Travel }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'activities', component: Activities }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'tickets', component: Tickets })
+			)
+		)
+	)
 ), document.getElementById('root'));
 
 },{"./app":770,"react":731,"react-bootstrap":492,"react-dom":506,"react-redux":543,"react-router":582,"react-router-redux":552,"redux":760,"redux-devtools":753,"redux-devtools-dock-monitor":735,"redux-devtools-log-monitor":747}]},{},[771]);
