@@ -57293,17 +57293,17 @@ function App(_ref) {
 				_react2.default.createElement(
 					'a',
 					{ href: 'https://www.facebook.com/chibiconuk' },
-					_react2.default.createElement('i', { id: 'social-fb', 'class': 'fa fa-facebook-square fa-3x social' })
+					_react2.default.createElement('i', { id: 'social-fb', className: 'fa fa-facebook-square fa-3x social' })
 				),
 				_react2.default.createElement(
 					'a',
 					{ href: 'https://twitter.com/UoEAnimeManga' },
-					_react2.default.createElement('i', { id: 'social-tw', 'class': 'fa fa-twitter-square fa-3x social' })
+					_react2.default.createElement('i', { id: 'social-tw', className: 'fa fa-twitter-square fa-3x social' })
 				),
 				_react2.default.createElement(
 					'a',
 					{ href: 'mailto:chibiconuk@gmail.com' },
-					_react2.default.createElement('i', { id: 'social-em', 'class': 'fa fa-envelope-square fa-3x social' })
+					_react2.default.createElement('i', { id: 'social-em', className: 'fa fa-envelope-square fa-3x social' })
 				)
 			)
 		)
