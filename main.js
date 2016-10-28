@@ -57011,7 +57011,7 @@ function NavBar(props) {
 				_react2.default.createElement(
 					_reactRouter.Link,
 					{ to: '/' },
-					'ChibiCon'
+					'Chibi-Con'
 				)
 			),
 			_react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
@@ -57317,7 +57317,7 @@ function Activities() {
 					_react2.default.createElement(
 						'p',
 						null,
-						'If you would like to perform at Chibi Con contact us either by our Facebook page or by email at ',
+						'If you would like to perform at Chibi-Con contact us either by our Facebook page or by email at ',
 						_react2.default.createElement(
 							'a',
 							{ href: 'mailto:chibiconuk@gmail.com' },
