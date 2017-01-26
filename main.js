@@ -57488,7 +57488,7 @@ function Activities() {
 					_react2.default.createElement(
 						'h4',
 						null,
-						'SciFi - 12pm-1pm'
+						'Guest Speaker - 12pm-1pm'
 					),
 					_react2.default.createElement(
 						'h4',
