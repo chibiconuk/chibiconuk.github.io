@@ -57476,9 +57476,29 @@ function Activities() {
 					_reactBootstrap.Panel,
 					null,
 					_react2.default.createElement(
+						'h3',
+						null,
+						'Events'
+					),
+					_react2.default.createElement(
+						'h4',
+						null,
+						'Dancers - 11am-11:30am'
+					),
+					_react2.default.createElement(
+						'h4',
+						null,
+						'SciFi - 12pm-1pm'
+					),
+					_react2.default.createElement(
+						'h4',
+						null,
+						'J-fashion show - 1:30pm-2:30pm'
+					),
+					_react2.default.createElement(
 						'p',
 						null,
-						'We are planning on having a Cosparade where you can show off your skills.  If you would like to take part tell us your name and character you plan on cosplaying at: ',
+						'There are many different fashions out there so we want to give you a chance to show off your own style. Whether you are a Lolita, if you wear visual kei or any other fashion all are welcome. If you would like to take part tell us your name at: ',
 						_react2.default.createElement(
 							'a',
 							{ href: 'mailto:chibiconuk@gmail.com' },
@@ -57486,14 +57506,29 @@ function Activities() {
 						)
 					),
 					_react2.default.createElement(
+						'h4',
+						null,
+						'Cosparade - 3pm-4pm'
+					),
+					_react2.default.createElement(
 						'p',
 						null,
-						'There will also be a J-fashion show so if you like to wear lolita, visual kei, fairy kei or any other fashions and would like to take part email us at: ',
+						'Participants will be able to strut their stuff on stage and show off all their hard work and the best costume will win the grand prize. Feel free to act out your character. Both handmade and bought cosplays will be welcome. If you would like to take part tell us your name and the character you will be playing at: ',
 						_react2.default.createElement(
 							'a',
 							{ href: 'mailto:chibiconuk@gmail.com' },
 							'chibiconuk@gmail.com'
 						)
+					),
+					_react2.default.createElement(
+						'h4',
+						null,
+						'Dancers - 4:30pm-5pm'
+					),
+					_react2.default.createElement(
+						'h4',
+						null,
+						'Raffle and Cosparade Winner Announcement - 5pm onwards'
 					),
 					_react2.default.createElement(
 						'h3',
