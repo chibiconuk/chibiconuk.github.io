@@ -57549,7 +57549,13 @@ function Tickets() {
 					_react2.default.createElement(
 						'p',
 						null,
-						'Tickets will be on sale soon (Exhibitors and Performers do not need to buy tickets)'
+						'Tickets are on sale ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'https://www.eventbrite.co.uk/e/chibi-con-2017-tickets-31367252296' },
+							'now'
+						),
+						'. (Exhibitors and Performers do not need to buy tickets)'
 					),
 					_react2.default.createElement(
 						'p',
